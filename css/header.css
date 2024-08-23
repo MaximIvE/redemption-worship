@@ -1,0 +1,32 @@
+header{
+  padding-bottom: 8px;
+  background-image: url('/img/background-header.webp');
+  background-position: 25% 90%;
+  background-clip: text;
+  color: transparent;
+  background-color: var(--background-primary-color);
+}
+.header_title{
+  display: flex;
+  align-items: center;
+  margin-bottom: 4px;
+}
+.header_img{
+  height: 36px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+nav{
+  padding-left: 46px;
+}
+.nav-item{
+  display: inline-block;
+  padding: 0 6px;
+  color: var(--background-primary-color);
+  font-weight: 600;
+}
+
+.activ{
+  border-bottom: 2px solid var(--activ-border-color);
+}
