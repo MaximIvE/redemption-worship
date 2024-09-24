@@ -7,10 +7,11 @@
     
     --link-color: #155d75;
     --link-second-color:#606c78;
-    --activ-border-color: tomato;
+    --link-third-color: #fff;
+    --activ-border-color: rgb(255, 255, 71);
   
-    
-    --primary-color: #3498db;
-    --secondary-color: #2ecc71;
-    --text-color: #333;
+    --decoration-color: rgba(96, 108, 120);
+    --wrapper-color: rgba(37, 61, 89, 0.5);
+    /* --primary-color: #3498db; */
+    /* --secondary-color: #2ecc71; */
 }
