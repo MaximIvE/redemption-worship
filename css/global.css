@@ -13,8 +13,8 @@ body {
 }
 
 .icon_square {
-  width: 16px;
-  height: 16px;
+  width: 20px;
+  height: 20px;
   background-color: var(--link-second-color);
   border-radius: 4px;
   color: var(--backgroound-section-color);
