@@ -116,7 +116,7 @@ header{
 
 
 
-@media (min-width: 394px) {
+@media (min-width: 380px) {
   .header_title-text {
     display: inline;
     margin-left: 6px;
