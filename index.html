@@ -4,63 +4,76 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/variables.css">
-  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/reset.css"/>
+  <link rel="stylesheet" href="css/variables.css"/>
+  <link rel="stylesheet" href="css/global.css"/>
+
+  <link rel="stylesheet" href="css/header.css"/>
+
+  <link rel="stylesheet" href="css/utils.css"/>
+
+  <link rel="shortcut icon" type="image/ico" href="favicon.ico"/>
   
-  <link rel="stylesheet" href="css/header.css">
-  <link rel="stylesheet" href="css/footer.css">
-  
-  <link rel="stylesheet" href="css/index.css">
-  
-  <link rel="shortcut icon" type="image/png" href="img/logo.png"
-  />
-  
-  <script src="js/index.js"></script>
+  <script src="js/utils.js" defer></script>
   <title>Redemption Worship</title>
 </head>
+
 <body>
   <header>
-    <div class="container">
+      <button class="nav-mobile" onclick="toggle(event)" data-id="mob-menu">
+        <svg class="button-icons" width="24" height="24" viewBox="0 0 512.021 512.021">
+          <use href="img/icons/mob-menu.svg#mob_menu"></use>
+        </svg>
+      </button>
+
       <div class="header_title">
-      <img src="img/logo.png" alt="Логотип" class="header_img"/>
-      <h1>Redemption Worship</h1>
-    </div>
+        <img src="img/logo.png" alt="Logo" class="header_img" />
+        <h1 class="header_title-text">Redemption Worship</h1>
+      </div>
     
-    <nav>
-      <ul>
-       <li class= "nav-item activ"><a href="#">Головна</a></li>
-        <li class="nav-item"><a href="https://drive.google.com/drive/folders/1zxVXSzw35qKmhu5BcP-HISQWTOGNhG4y">Тексти</a></li>
-        <li class="nav-item"><a href="https://docs.google.com/spreadsheets/d/1G98HRpEKOy9EVQo_yJp-Vu9kY4nZiaWYHCnoJKmfHs8/edit#gid=1349975186">Розклад</a></li>
-        <li class="nav-item"><a href="pages/resource.html">Ресурси</a></li>
-      </ul>
-    </nav>
+      <nav class="nav">
+        <ul class="tablet-nav_menu">
+          <li class="nav-item activ"><a href="#">Головна</a></li>
+          <li class="nav-item"><a href="https://drive.google.com/drive/folders/1zxVXSzw35qKmhu5BcP-HISQWTOGNhG4y">Тексти</a>
+          </li>
+          <li class="nav-item"><a
+              href="https://docs.google.com/spreadsheets/d/1G98HRpEKOy9EVQo_yJp-Vu9kY4nZiaWYHCnoJKmfHs8/edit#gid=1349975186">Розклад</a>
+          </li>
+          <li class="nav-item"><a href="resource.html">Ресурси</a></li>
+        </ul>
+      </nav>
+    
+    <a class="auth-link_contanier" href="#">
+        <svg class="button-icons" heigh="24px" width="24px" viewBox="0 0 512.021 512.021">
+          <use href="./img/icons/profile.svg#profile"></use>
+        </svg>
+      <p class="auth-link_text">Увійти</p>
+    </a>
+
+    <div class="mobile-nav" id="mob-menu">
+      <nav class="mobile-nav_menu">
+        <button class="nav-mobile mobile-nav_button-close" id="closeMobMenu" onclick="toggle(event)" data-id="mob-menu">
+          <svg class="button-icons" width="24" height="24" viewBox="0 0 512.021 512.021">
+            <use href="img/icons/close.svg#close"></use>
+          </svg>
+        </button>
+          <ul>
+            <li class="nav-item activ"><a class="activ-link mobile-nav_link" href="#">Головна</a></li>
+            <li class="nav-item"><a class="mobile-nav_link" href="https://drive.google.com/drive/folders/1zxVXSzw35qKmhu5BcP-HISQWTOGNhG4y">Тексти</a>
+            </li>
+            <li class="nav-item"><a
+                class="mobile-nav_link" href="https://docs.google.com/spreadsheets/d/1G98HRpEKOy9EVQo_yJp-Vu9kY4nZiaWYHCnoJKmfHs8/edit#gid=1349975186">Розклад</a>
+            </li>
+            <li class="nav-item"><a class="mobile-nav_link" href="resource.html">Ресурси</a></li>
+          </ul>
+      </nav>
     </div>
   </header>
-  
-  <hr/>
-  
-  <main class="container">
-    <section>
-      <h2>Про нас</h2>
-      <p>Ласкаво просимо на наш сайт!</p>
-      <p>Ми - християнська група прославлення, яка служить через музику.</p>
-    </section>
-  </main>
-  <br/>
-  <hr/>
-  <footer>
-    <div class="container">
-      <p>&copy; 2024 XCI Worship</p>
-      <a class="contact-link"
-      href="https://linkedin.com/in/maksym-ivaniuk-207288224"
-      target="_blank" 
-      rel="noopener noreferrer"
-      >Зв'язатись з нами</a>
-    </div>
-  </footer>
 
-  <!-- <script src="components/Footer/loadFooter.js"></script> -->
-  
+  <main>
+
+    
+    
+  </main>
 </body>
 </html>
