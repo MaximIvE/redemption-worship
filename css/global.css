@@ -1,5 +1,5 @@
 body {
-  border: 1px solid green;
+  /* border: 1px solid green; */
   min-height: 40px;
   
   transition: transform .2s ease;
@@ -18,4 +18,9 @@ body {
   background-color: var(--link-second-color);
   border-radius: 4px;
   color: var(--backgroound-section-color);
+}
+
+.button-icons{
+  background-color: inherit;
+  fill: var(--link-second-color);
 }

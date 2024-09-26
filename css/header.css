@@ -15,6 +15,7 @@ header{
 .nav-mobile{
   padding: 8px;
   border: none;
+  display: block;
 }
 
 .header_title{
@@ -35,7 +36,7 @@ header{
 
 .header_title-text{
   display: none;
-  font-size: 5vw;
+  font-size: calc((100vw - 152px)*0.09);
 }
 
 .nav{
@@ -88,7 +89,7 @@ header{
   height: 100%;
   width: 40vw;
   min-width: 280px;
-  padding: 48px 12px 12px 12px;
+  padding: 60px 12px 12px 12px;
   background-color: var(--background-secondary-color);
   box-shadow: 4px 0 8px rgb(96, 108, 120);
   z-index: 2;
@@ -104,17 +105,10 @@ header{
 
 .mobile-nav_button-close{
   position: absolute;
-  right: 20px;
-  top: 20px;
+  right: 8px;
+  top: 8px;
   z-index: 2;
 }
-
-.button-leveling{
-  line-height: 24px;
-  text-align: center;
-}
-
-
 
 @media (min-width: 380px) {
   .header_title-text {
@@ -123,7 +117,7 @@ header{
   }
 }
 
-@media (min-width: 480px) {
+@media (min-width: 487px) {
   .header_title-text {
     font-size: 2rem;
   }
@@ -151,7 +145,8 @@ header{
 }
 
 .qwe{
-   height: 100px;
-   width: 100px;
-   background-color: green;
+   height: 50px;
+   width: 20px;
+   border: 1px solid green;
+   fill: red;
 }

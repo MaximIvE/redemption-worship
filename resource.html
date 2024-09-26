@@ -21,7 +21,9 @@
 <body>
   <header>
     <button class="nav-mobile" onclick="toggle(event)" data-id="mob-menu">
-      <div class="icon_square button-leveling">♪</div>
+      <svg class="button-icons" width="24" height="24" viewBox="0 0 512.021 512.021">
+        <use href="img/icons/mob-menu.svg#mob_menu"></use>
+      </svg>
     </button>
   
     <div class="header_title">
@@ -42,14 +44,18 @@
     </nav>
   
     <a class="auth-link_contanier" href="#">
-      <div class="icon_square leveling">☻</div>
+      <svg class="button-icons" heigh="24px" width="24px" viewBox="0 0 512.021 512.021">
+        <use href="./img/icons/profile.svg#profile"></use>
+      </svg>
       <p class="auth-link_text">Увійти</p>
     </a>
   
     <div class="mobile-nav" id="mob-menu">
       <nav class="mobile-nav_menu">
-        <button class="nav-mobile" id="closeMobMenu" onclick="toggle(event)" data-id="mob-menu">
-          <div class="icon_square mobile-nav_button-close button-leveling">X</div>
+        <button class="nav-mobile mobile-nav_button-close" id="closeMobMenu" onclick="toggle(event)" data-id="mob-menu">
+          <svg class="button-icons" width="24" height="24" viewBox="0 0 512.021 512.021">
+            <use href="img/icons/close.svg#close"></use>
+          </svg>
         </button>
         <ul>
           <li class="nav-item"><a class="mobile-nav_link" href="index.html">Головна</a></li>
