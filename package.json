@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /redemption-worship/",
+    "build_prod": "parcel build src/*.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
