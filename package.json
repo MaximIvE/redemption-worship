@@ -1,0 +1,31 @@
+{
+  "name": "redemption-worship",
+  "version": "1.0.0",
+  "description": "This is a volunteer project for the XCI Worship group",
+  "homepage": "https://maximive.github.io/Redemption-Worship/",
+  "scripts": {
+    "dev": "parcel src/*.html",
+    "build": "parcel build src/*.html --public-url /Redemption-Worship/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/goitacademy/parcel-project-template.git"
+  },
+  "keywords": [],
+  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maximive/Redemption-Worship/issues"
+  },
+  "dependencies": {
+    "modern-normalize": "^3.0.1"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.12.0",
+    "parcel": "^2.12.0",
+    "parcel-reporter-clean-dist": "^1.0.4",
+    "posthtml-include": "^2.0.1"
+  },
+  "browserslist": "> 0.5%, last 2 versions, not dead"
+}
