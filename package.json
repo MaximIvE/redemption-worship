@@ -2,10 +2,10 @@
   "name": "redemption-worship",
   "version": "1.0.0",
   "description": "This is a volunteer project for the XCI Worship group",
-  "homepage": "https://maximive.github.io/redemption-worship/",
+  "homepage": "https:/https://redemption-worship.netlify.app/",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /redemption-worship/",
+    "build": "parcel build src/*.html --public-url /redemption-worship.netlify.app/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
