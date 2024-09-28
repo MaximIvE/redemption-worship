@@ -16,7 +16,11 @@
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "ISC",
   "bugs": {
+<<<<<<< HEAD
     "url": "https://github.com/maximive/redemption-worship/issues"
+=======
+    "url": "https://github.com/maximive/Redemption-Worship/issues"
+>>>>>>> f7b00a9599d4c4693a6aa71647f18d77e0657efe
   },
   "dependencies": {
     "modern-normalize": "^3.0.1"
