@@ -1,5 +1,5 @@
 // --- global part ---
-@import './base/common';
+@import '~node_modules/modern-normalize/modern-normalize.css';
 
 @import './base/reset';
 @import './utils/vars';
@@ -13,4 +13,4 @@
 
 
 //--- last part ---
-@import './utils/utils';
+// @import './utils/utils';

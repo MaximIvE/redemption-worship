@@ -5,11 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel="shortcut icon" type="image/ico" href="../favicon.ico" />
+    
+    <link rel="stylesheet" href="./sass/index.scss" />
+
     <script type="module" src="./index.js" defer></script>
     <title>Redemption Worship</title>
 </head>
-<body>
-    <h1>Home Page</h1>
+<body class="background__main">
+    <div class="wrapper">
+        <include src="./partials/header.html"></include>
+
+        <include src="./pages/home.html"></include>
+
+        <include src="./partials/footer.html"></include>
+
+    </div>
+    
 
 </body>
 </html>
