@@ -1,0 +1,16 @@
+// --- global part ---
+@import './base/common';
+
+@import './base/reset';
+@import './utils/vars';
+@import './base/global';
+
+// --- partials ---
+@import './partials/header';
+
+
+@import './partials/footer';
+
+
+//--- last part ---
+@import './utils/utils';

@@ -1,0 +1,153 @@
+header {
+  margin: 0 auto;
+  padding: 12px 15px;
+  max-width: 100%;
+
+  box-shadow: 0px 2px 4px var(--link-second-color);
+  background: var(--backgroound-section-color);
+  background-position: 25% 90%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-mobile {
+  padding: 8px;
+  border: none;
+  display: block;
+}
+
+.header_title {
+  display: flex;
+  align-items: center;
+  padding: 0.5em;
+  background-image: linear-gradient(rgba(0, 120, 255, 0.5), rgba(0, 0, 0, 0.6)),
+    url('../images/background-header.png');
+  background-size: 100%;
+  background-position-y: bottom;
+  background-clip: text;
+  color: transparent;
+}
+
+.header_img {
+  height: 32px;
+  border-radius: 50%;
+}
+
+.header_title-text {
+  display: none;
+  font-size: calc((100vw - 152px) * 0.09);
+}
+
+.nav {
+  display: none;
+  color: var(--background-secondary-color);
+}
+.tablet-nav_menu {
+  display: flex;
+}
+
+.nav-item {
+  padding: 4px 6px 6px 6px;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.auth-link_contanier {
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  visibility: collapse;
+}
+
+.auth-link_text {
+  margin-left: 8px;
+  font-size: 1rem;
+  display: none;
+}
+
+.activ {
+  border: 2px solid #606c78;
+  border-radius: 8px;
+  color: #f1f2f3;
+}
+
+.mobile-nav {
+  position: absolute;
+  display: none;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(96, 108, 120, 0.5);
+  z-index: 1;
+}
+
+.mobile-nav_menu {
+  position: relative;
+  box-sizing: border-box;
+  height: 100%;
+  width: 40vw;
+  min-width: 280px;
+  padding: 60px 12px 12px 12px;
+  background-color: var(--background-secondary-color);
+  box-shadow: 4px 0 8px rgb(96, 108, 120);
+  z-index: 2;
+}
+
+.mobile-nav_link {
+  color: #d2d7e3;
+}
+
+.activ-link {
+  color: #fff;
+}
+
+.mobile-nav_button-close {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  z-index: 2;
+}
+
+@media (min-width: 380px) {
+  .header_title-text {
+    display: inline;
+    margin-left: 6px;
+  }
+}
+
+@media (min-width: 487px) {
+  .header_title-text {
+    font-size: 2rem;
+  }
+  .header_img {
+    height: 36px;
+  }
+}
+
+@media (min-width: 767px) {
+  .mobile-nav {
+    display: none;
+  }
+  .nav-mobile {
+    display: none;
+  }
+  .nav {
+    display: block;
+  }
+}
+
+@media (min-width: 791px) {
+  .auth-link_text {
+    display: inline;
+  }
+}
+
+.qwe {
+  height: 50px;
+  width: 20px;
+  border: 1px solid green;
+  fill: red;
+}

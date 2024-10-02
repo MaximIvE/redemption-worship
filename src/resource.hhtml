@@ -15,7 +15,7 @@
   
   <link rel="shortcut icon" type="image/ico" href="../favicon.ico" />
   
-  <script src="js/utils.js" defer></script>
+  <!-- <script src="js/utils.js" defer></script> -->
   <title>Redemption Worship</title>
 </head>
 <body>
