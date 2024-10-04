@@ -5,8 +5,14 @@
 @import './utils/vars';
 @import './base/global';
 
+// --- atoms ---
+
+
 // --- partials ---
 @import './partials/header';
+
+// --- pages ---
+@import './pages/home';
 
 
 @import './partials/footer';
