@@ -3,19 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <link rel="stylesheet" href="css/reset.css" />
-  <link rel="stylesheet" href="css/variables.css" />
-  <link rel="stylesheet" href="css/global.css" />
-  
-  <link rel="stylesheet" href="css/header.css" />
-  <link rel="stylesheet" href="css/footer.css" />
-  
-  <link rel="stylesheet" href="css/utils.css" />
+
+  <link rel="stylesheet" href="scss/index.scss" />
   
   <link rel="shortcut icon" type="image/ico" href="../favicon.ico" />
   
   <script src="js/utils.js" defer></script>
+  <script type="module" src="./js/include.js"></script>
   <title>Redemption Worship</title>
 </head>
 <body>
@@ -81,18 +75,7 @@
       </ol>
     </section>
   </main>
-  <br/>
-  <hr/>
-  <footer>
-    <div class="container">
-      <p>&copy; 2024 XCI Worship</p>
-      <a class="contact-link"
-      href="https://linkedin.com/in/maksym-ivaniuk-207288224"
-      target="_blank" 
-      rel="noopener noreferrer"
-      >Зв'язатись з нами</a>
-    </div>
-  </footer>
-
+  
+  <include src="./html/templates/footer.html"></include>
 </body>
 </html>
