@@ -25,32 +25,8 @@
     }
 }
 
-@mixin max479 {
-    @media screen and (max-width: 479px) {
-        @content;
-    }
-}
-
-@mixin min480 {
-    @media screen and (min-width: 480px) {
-        @content;
-    }
-}
-
-@mixin max767 {
-    @media screen and (max-width: 767px) {
-        @content;
-    }
-}
-
-@mixin min768 {
-    @media screen and (min-width: 768px) {
-        @content;
-    }
-}
-
 @mixin min768-max1199 {
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    @media screen and (min-width: 768px) {
         @content;
     }
 }
@@ -63,12 +39,6 @@
 
 @mixin min1280 {
     @media screen and (min-width: 1280px) {
-        @content;
-    }
-}
-
-@mixin max1279 {
-    @media screen and (max-width: 1279px) {
         @content;
     }
 }
