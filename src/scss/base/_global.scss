@@ -4,7 +4,7 @@ body {
   
   transition: transform .2s ease;
   -webkit-font-smoothing: antialiased;
-  background: var(--backgroound-section-color);
+  background: $backgroound-section-color;
   color: #919191;
   font-family: "Lato", "Noto Sans", "Noto Sans KR", "Noto Sans JP", "Noto Sans HK", "Noto Sans SC", "Noto Sans TC", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   font-weight: 400;
@@ -15,14 +15,14 @@ body {
 .icon_square {
   width: 24px;
   height: 24px;
-  background-color: var(--link-second-color);
+  background-color: $link-second-color;
   border-radius: 4px;
-  color: var(--backgroound-section-color);
+  color: $backgroound-section-color;
 }
 
 .button-icons{
   background-color: inherit;
-  fill: var(--link-second-color);
+  fill: $link-second-color;
 }
 
 .page-content{
