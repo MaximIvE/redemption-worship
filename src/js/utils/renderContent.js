@@ -1,5 +1,4 @@
 function renderContent(content) {
-    console.log('content', content)
     document.querySelector('.page-content').innerHTML = content;
 };
 
