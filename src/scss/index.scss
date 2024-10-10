@@ -1,10 +1,19 @@
-@import './reset';
-@import './variables';
-@import './global';
+// --- global part ---
+@import '~node_modules/modern-normalize/modern-normalize.css';
+
+@import './base/reset';
+@import './utils/variables';
+@import './base/global';
+
+// --- atoms ---
 
 
-@import './header';
-@import './footer';
+// --- partials ---
+@import './partials/header';
+@import './partials/footer';
 
 
+// --- pages ---
+
+//--- last part ---
 @import './utils/utils';

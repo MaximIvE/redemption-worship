@@ -1,78 +1,27 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="shortcut icon" type="image/ico" href="../favicon.ico" />
+    
+    <link rel="stylesheet" href="./scss/index.scss" />
 
-  <link rel="stylesheet" href="scss/index.scss"/>
-
-  <link rel="shortcut icon" type="image/ico" href="../favicon.ico"/>
-  
-  <script type="module" src="./index.js"></script>
-  <script src="js/utils.js" defer></script>
-  <script type="module" src="./js/include.js"></script>
-  <title>Redemption Worship</title>
+    <script type="module" src="./index.js" defer></script>
+    <title>Redemption Worship</title>
 </head>
+<body class="background__main">
+    <div class="wrapper">
 
-<body>
-  <header>
-      <button class="nav-mobile" onclick="toggle(event)" data-id="mob-menu">
-        <svg class="button-icons" width="24" height="24" viewBox="0 0 512.021 512.021">
-          <use href="images/icons/mob-menu.svg#mob_menu"></use>
-        </svg>
-      </button>
+        <include src="./html/partials/header.html"></include>
 
-      <div class="header_title">
-        <img src="images/logo.png" alt="Logo" class="header_img" />
-        <h1 class="header_title-text">Redemption Worship</h1>
-      </div>
-    
-      <nav class="nav">
-        <ul class="tablet-nav_menu">
-          <li class="nav-item activ"><a href="#">Головна</a></li>
-          <li class="nav-item"><a href="https://drive.google.com/drive/folders/1zxVXSzw35qKmhu5BcP-HISQWTOGNhG4y">Тексти</a>
-          </li>
-          <li class="nav-item"><a
-              href="https://docs.google.com/spreadsheets/d/1G98HRpEKOy9EVQo_yJp-Vu9kY4nZiaWYHCnoJKmfHs8/edit#gid=1349975186">Розклад</a>
-          </li>
-          <li class="nav-item"><a href="resource.html">Ресурси</a></li>
-        </ul>
-      </nav>
-    
-    <a class="auth-link_contanier" href="#">
-        <svg class="button-icons" heigh="24px" width="24px" viewBox="0 0 512.021 512.021">
-          <use href="./images/icons/profile.svg#profile"></use>
-        </svg>
-      <p class="auth-link_text">Увійти</p>
-    </a>
+        <main class="page-content">
+            <include src="./html/pages/home.html"></include>
+        </main>
 
-    <div class="mobile-nav" id="mob-menu">
-      <nav class="mobile-nav_menu">
-        <button class="nav-mobile mobile-nav_button-close" id="closeMobMenu" onclick="toggle(event)" data-id="mob-menu">
-          <svg class="button-icons" width="24" height="24" viewBox="0 0 512.021 512.021">
-            <use href="images/icons/close.svg#close"></use>
-          </svg>
-        </button>
-          <ul>
-            <li class="nav-item activ"><a class="activ-link mobile-nav_link" href="#">Головна</a></li>
-            <li class="nav-item"><a class="mobile-nav_link" href="https://drive.google.com/drive/folders/1zxVXSzw35qKmhu5BcP-HISQWTOGNhG4y">Тексти</a>
-            </li>
-            <li class="nav-item"><a
-                class="mobile-nav_link" href="https://docs.google.com/spreadsheets/d/1G98HRpEKOy9EVQo_yJp-Vu9kY4nZiaWYHCnoJKmfHs8/edit#gid=1349975186">Розклад</a>
-            </li>
-            <li class="nav-item"><a class="mobile-nav_link" href="resource.html">Ресурси</a></li>
-          </ul>
-      </nav>
+        <include src="./html/partials/footer.html"></include>
+        
     </div>
-  </header>
-
-  <main>
-    <include src="./html/pages/source.html"></include>
-
-    <div class="page-content"></div>
-    
-    
-    <include src="./html/templates/footer.html"></include>
-  </main>
 </body>
 </html>

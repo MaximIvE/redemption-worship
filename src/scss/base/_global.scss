@@ -24,3 +24,7 @@ body {
   background-color: inherit;
   fill: var(--link-second-color);
 }
+
+.page-content{
+  min-height: calc(100vh - 152px);
+}
