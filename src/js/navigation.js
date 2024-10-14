@@ -1,8 +1,4 @@
-console.log("navigation.js");
-
 import page from 'page';
-import loadHTML from './utils/loadHTML';
-import renderContent from './utils/renderContent';
 
 import home from '../html/pages/home.html';
 import songs from '../html/pages/songs.html';
@@ -10,18 +6,19 @@ import songOne from './pages/songOne';
 import shedule from '../html/pages/shedule.html';
 import source from '../html/pages/source.html';
 import notFound from '../html/pages/notFound.html';
+import { pageRoutDinamic, pageRoutAsync } from './utils/pageRout';
 
 
 // Функція для налаштування маршрутизації
 export default function routing() {
-  page('/', async () => renderContent(await loadHTML(home)));
-  page('/songs', async () => renderContent(await loadHTML(songs)));
-  page('/songs/:id', async (ctx) => renderContent(songOne(ctx)));
-  page('/shedule', async () => renderContent(await loadHTML(shedule)));
-  page('/source', async () => renderContent(await loadHTML(source)));
+  const obj = { activ: true };
 
-  page('*', async () => renderContent(await loadHTML(notFound)));
-
+  page('/', pageRoutAsync(home, obj));
+  page('/songs', pageRoutAsync(songs, obj));
+  page('/songs/:id', pageRoutDinamic(songOne));
+  page('/shedule', pageRoutAsync(shedule, obj));
+  page('/source', pageRoutAsync(source, obj));
+  page('*', pageRoutAsync(notFound));
   // Стартуємо маршрутизацію
   page();
-}
+};

@@ -1,5 +1,6 @@
 function renderContent(content) {
-    document.querySelector('.page-content').innerHTML = content;
+    const element = document.getElementById('content');
+    element.innerHTML = content;
 };
 
 export default renderContent;
